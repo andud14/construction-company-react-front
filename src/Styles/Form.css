@@ -1,0 +1,72 @@
+.form{
+    margin: 0 auto;
+    padding: 2vw;
+    width: 70%;
+    height: auto;
+    background-color: white;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 2vw;
+}
+
+.mform p{
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 600;
+    margin-bottom: 2vw;
+}
+
+
+.cb-text{
+    padding-top: 1vw;
+    padding-left: 1vw;
+    float: left;
+    font-size: 0.8vw;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 980px){
+    .form{
+        width: 90%;
+    }
+    
+    .form .cnt-form{
+        margin-top: 2vw;
+        width: 100%;
+    }
+    
+    .form input{
+        border-radius: 0;
+        font-size: 2vw;
+        height: 5vw;
+    }
+    
+    .form select{
+        font-size: 2vw;
+        height: 5vw;
+    }
+    
+    .form label{
+        font-size: 2vw;
+    }
+    
+    .form textarea{
+        font-size: 2vw;
+    }
+
+    .mform .checkbox{
+        float: left;
+        width: 2vw;
+    }
+
+    .mform .cb-text{
+        padding-top: 2.2vw;
+        padding-left: 1vw;
+        float: left;
+        font-size: 1.3vw;
+        font-weight: 400;
+    }
+
+    .mform p{
+        font-size: 2vw;
+    }
+}

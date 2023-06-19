@@ -1,0 +1,143 @@
+/* Div с блоками */
+.service-block{
+    margin: 0 auto;
+    width: 90%;
+    height: 28.1vw;
+    margin-bottom: 2vw;
+}
+
+/* Разделитель текса */
+.service-block hr {
+    margin: 1vw 0;
+    width: 30%;
+    background-color: var(--mainColor);
+    height: 2px;
+    border: none;
+    margin-left: 10%;
+}
+
+/* Первый блок */
+.service-bl1{
+    position: relative;
+}
+
+/* Изображение в блоке */
+.main-img{
+    float: left;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 50%;
+}
+
+/* Второе изображение в блоке */
+.sec-img{
+    float: left;
+    left: -2vw;
+    position: absolute;
+    width: 50%;
+}
+
+/* Изображение в блоке альт. */
+.main-img-2{
+    float: left;
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 50%;
+}
+
+/* Второе изображение в блоке альт. */
+.sec-img-2{
+    float: left;
+    right: 2vw;
+    position: absolute;
+    width: 50%;
+}
+
+/* Второй блок */
+.service-bl2{
+    float: left;
+    width: 50%;
+    height: auto;
+    position: relative;
+    height: 100%;
+}
+
+/* Заголовок второго блока */
+.service-bl2 h3{
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-left: 10%;
+    position: relative;
+}
+
+/* Содержание второго блока */
+.service-bl2 p{
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+@media screen and (max-width: 980px){
+    /* Заголовок второго блока */
+.service-bl2 h3{
+    font-size: 2.4vw;
+    font-weight: 600;
+    position: relative;
+    margin-left: 0vw;
+    text-align: center;
+}
+
+/* Содержание второго блока */
+.service-bl2 p{
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2vw;
+    text-align: center;
+}
+
+/* Второе изображение в блоке */
+.sec-img{
+    display: none;
+}
+
+/* Второе изображение в блоке альт. */
+.sec-img-2{
+    display: none;
+}
+
+/* Изображение в блоке альт. */
+.main-img-2{
+    display: none;
+}
+
+/* Изображение в блоке альт. */
+.main-img{
+    display: none;
+}
+
+/* Второе изображение в блоке альт. */
+.sec-img-2{
+    display: none;
+}
+
+.service-bl2{
+    width: 100%;
+}
+
+.service-bl2 hr{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 2vw;
+}
+
+.service-bl2{
+    margin-bottom: 4vw;
+}
+}

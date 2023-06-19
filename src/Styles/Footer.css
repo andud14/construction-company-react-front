@@ -1,0 +1,47 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--mainColor);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+footer a{
+    font-size: 0.9vw;
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5rem;
+    cursor: pointer;
+}
+
+footer a:hover{
+    transition: all 1s ease;
+    color: var(--mainSelected);
+}
+
+footer img{
+    padding-top: 1vw;
+    width: 15%;
+} 
+
+footer p{
+    font-size: 0.6vw;
+    padding-top: 1vw;
+    color: white;
+}
+
+@media screen and (max-width: 980px){
+    footer a{
+        padding: 0 1rem;
+        font-size: 2vw;
+    }
+
+    footer img{
+        width: 40%;
+    } 
+
+    footer p{
+        font-size: 2vw;
+    }
+}

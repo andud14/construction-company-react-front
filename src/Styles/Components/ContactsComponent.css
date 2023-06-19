@@ -1,0 +1,67 @@
+.contacts{
+    width: 100%;
+}
+
+/* Контактные данные */
+.cnt-info{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.cnt-block{
+    float: right;
+    width: 25%;
+}
+
+.cnt-block h3{
+    font-size: 1.3vw;
+}
+
+.cnt-block p{
+    margin-top: 0.5vw;
+    font-size: 0.9vw;
+}
+
+.contacts hr {
+    margin-top: 1.5vw;
+    width: 30%;
+    background-color: var(--mainColor);
+    height: 0.15vw;
+    border: none;
+}
+
+/* Карта */
+.contacts iframe{
+    margin-top: 2vw;
+    width: 100%;
+    height: 25vw;
+}
+
+@media screen and (max-width: 980px){
+.cnt-block{
+    height: 15vw;
+    width: 50%;
+}
+
+.cnt-block h3{
+    margin-bottom: 1vw;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.cnt-block p{
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.cnt-block hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contacts iframe{
+    width: 100%;
+    height: 50vw;
+}
+ }

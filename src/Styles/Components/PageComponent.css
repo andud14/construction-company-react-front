@@ -1,0 +1,122 @@
+/* Первый блок */
+.pg-bl1 {
+    height: 32.5vw;
+    width: 100%;
+    background-color: rgba(228, 228, 228, 0.623);
+}
+
+.bl-img {
+    margin-top: 2vw;
+    width: 60%;
+    float: left;
+    height: auto;
+}
+
+.bl-img img{
+    display: block;
+    margin: 0 auto; 
+    width: 85%;
+}
+
+.bl-info {
+    margin-top: 2vw;
+    width: 40%;
+    float: left;
+    height: auto;
+}
+
+.bl-info-tx{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.bl-info-tx hr{
+    width: 100%;
+    border-color: white;
+    margin-bottom: 1vw;
+}
+
+.hr-cs{
+    margin-top: 1vw;
+}
+.tx-logo{
+    float: left;
+}
+
+.tx-logo img{
+    width: 2vw;
+    margin-bottom: 1vw;
+}
+
+.tx-title{
+    margin-left: 1.5vw;
+    margin-top: 0.4vw;
+    float: left;
+    font-size: 1vw;
+}
+
+.tx-info{
+    text-align: right;
+    margin-top: 0.4vw;
+    font-size: 1vw;
+    font-weight: 600;
+    color: var(--mainSelected);
+}
+
+/* Второй блок */
+.pg-bl2{
+    width: 100%;
+}
+
+.bl2-info{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1vw;
+    margin-bottom: 2vw;
+}
+
+.bl2-info hr{
+    margin-bottom: 2vw;
+    border-color: white;
+}
+
+.bl2-title{
+    height: 100%;
+    width: 25%;
+    float: left;
+}
+
+.bl2-descr{
+    text-align: right;
+}
+
+.bl2-hr{
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 980px){
+    .bl-img {
+        margin-top: 2vw;
+        width: 100%;
+        height: auto;
+    }
+    .bl-info{
+        width: 100%;
+    }
+    .tx-title{
+        margin-top: 0vw;
+        font-size: 2vw;
+    } 
+
+    .tx-info{
+        font-size: 2vw;
+    }
+
+    .bl2-title{
+        font-size: 1.6vw;
+    }
+
+    .bl2-descr{
+        font-size: 1.6vw;
+    }
+}

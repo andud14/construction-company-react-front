@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --mainColor: #8EDB2D;
+    --secondaryColor: #E89315;
+    --mainSelected: #6da825;
+    --secondarySelected: #bd7913;
+}
+
+::-webkit-scrollbar {
+    width: 0.6vw;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #dddddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondaryColor);
+}
+
+html {
+
+    background-image: url(../../public/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.title{
+    margin: 2vw auto;
+    font-size: 2vw;
+    font-weight: 800;
+    text-align: center;
+    z-index: 1;
+}
+
+.form-coml{
+    text-align: center;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 980px){
+
+    .form-coml{
+        text-align: center;
+        font-size: 2vw;
+    }
+
+    .title{
+        font-size: 5vw;
+    }
+}

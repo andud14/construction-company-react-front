@@ -1,0 +1,29 @@
+.error-pg{
+    margin: 0 auto;
+    font-size: 1.2vw;
+    width: 90%;
+    height: auto;
+    margin-top: 2vw;
+}
+
+.error-sm{
+    font-size: 5vw;
+}
+
+.errorpage footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 980px){
+    .error-pg{
+        font-size: 3vw;
+    }
+    
+    .error-sm{
+        font-size: 10vw;
+    }
+}
+

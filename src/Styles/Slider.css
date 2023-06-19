@@ -1,0 +1,177 @@
+/* Заданная высота */
+:root {
+    --heights: 40vw;
+    --widths: 100%;
+}
+
+/* Блок слайдера */
+.slider-container {
+    background-color: gainsboro;
+    height: var(--heights);
+    width: var(--widths);
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.active {
+    display: inline-block;
+}
+
+.inactive {
+    display: none;
+}
+
+.slides {
+    height: var(--heights);
+    width: var(--widths);
+    position: relative;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.slide-title,
+.slide-button {
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    text-align: left;
+    top: 40%;
+    box-shadow: 16px 16px 13px 2px rgba(34, 60, 80, 0.35);
+}
+
+.slide-title h2 {
+    text-shadow: rgba(34, 60, 80, 0.37) 2px 5px;
+}
+
+.slide-button {
+    font-size: 1.2vw;
+    background-color: var(--secondaryColor);
+    text-align: center;
+    height: 2.5vw;
+    width: 12vw;
+    top: 50%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.slide-button:hover {
+    transition: all 1s ease;
+    background-color: var(--secondarySelected);
+}
+
+.prev,
+.next {
+    user-select: none;
+    color: transparent;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1rem;
+    margin-top: -3rem;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.slider-container:hover .prev,
+.slider-container:hover .next {
+    color: var(--secondaryColor)
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+    color: white;
+    background-color: var(--secondaryColor);
+    transition: all 0.5s ease-in;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.all-dots {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    top: 95%;
+    justify-content: center;
+    z-index: 200;
+}
+
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: 0px 5px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.slider-container:hover .dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-container:hover .dot {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-container:hover .active-dot {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.play-pause {
+    color: black;
+}
+
+@media screen and (max-width: 980px) {
+
+    .prev,
+    .next {
+        color: var(--secondaryColor);
+        top: 65%;
+        font-size: 4vw;
+        display: block;
+    }
+
+
+    .slider-container:hover .prev:hover,
+    .slider-container:hover .next:hover {
+        color: var(--secondaryColor);
+        background-color: rgba(0, 0, 0, 0);
+        transition: all 0.5s ease-in;
+    }
+
+    .slide-title,
+    .slide-button {
+        left: 10%;
+        box-shadow: 10px 10px 7px 2px rgba(34, 60, 80, 0.35);
+    }
+
+    .slide-title {
+        font-size: 2.2vw;
+    }
+
+    .slide-button {
+        top: 55%;
+        font-size: 3vw;
+        height: 5vw;
+        width: 20vw;
+    }
+
+}

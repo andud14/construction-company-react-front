@@ -1,0 +1,279 @@
+.main {
+    overflow: hidden;
+}
+
+/* Блок с информацией о компании */
+/* Блок с информацией о компании */
+/* Блок с информацией о компании */
+
+/* Часть блока */
+.mn-ab {
+    margin-bottom: 2vw;
+    float: left;
+}
+
+/* Изображение в блоке с информацией */
+.mn-ab img {
+    float: left;
+    width: 50%;
+}
+
+/* Блок с текстом в информации */
+.ab-text {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+
+/* Заголовок в блоке с текстом */
+.ab-title {
+    margin-top: 2vw;
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1.8vw;
+    font-weight: 600;
+}
+
+/* Разделитесь в тексте */
+.mn-ab hr {
+    margin: 1vw 0;
+    width: 30%;
+    background-color: var(--mainColor);
+    height: 2px;
+    border: none;
+    margin-left: 10%;
+}
+
+/* Текст в информации */
+.ab-dsc {
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.3vw;
+    text-align: justify;
+}
+
+/* СВЯЗАТЬСЯ С НАМИ */
+/* СВЯЗАТЬСЯ С НАМИ */
+/* СВЯЗАТЬСЯ С НАМИ */
+.contactsMain {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.cnt {
+    margin-bottom: 2vw;
+}
+
+.cnt-text {
+    float: left;
+    width: 40%;
+}
+
+.cnt-form {
+    float: left;
+    width: 60%;
+}
+
+.text-title {
+    color: var(--mainColor);
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+.contactsMain hr {
+    margin: 0 0 1vw 0;
+    width: 34%;
+    background-color: var(--mainColor);
+    height: 0.15vw;
+    border: none;
+}
+
+.contactsMain img {
+    margin-right: 10px;
+    float: left;
+    width: 3vw;
+    border-radius: 10px;
+}
+
+.cnt-text p {
+    font-size: 1vw;
+}
+
+.txt-dsc {
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+label {
+    font-weight: 800;
+    font-size: 1vw;
+}
+
+input {
+    margin: 0.2vw 0;
+    font-size: 1vw;
+    height: 2.5vw;
+    border-width: 1px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+textarea {
+    margin: 0.2vw 0;
+    font-size: 1vw;
+    height: 10vw;
+    width: 100%;
+    resize: none;
+    padding-left: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+}
+
+.btn:hover {
+    transition: all 1s ease;
+    color: black;
+    background-color: var(--mainSelected);
+    border: none;
+}
+
+form {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.form-bg {
+    margin-bottom: 2vw;
+    padding: 1vw;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+}
+
+select {
+    font-size: 1vw;
+    height: 2.5vw;
+    width: 100%;
+}
+
+.cb-text{
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+.checkbox{
+    float: left;
+    width: 0.7vw;
+}
+
+
+/* АДАПТИВ ПОД ТЕЛЕФОН */
+@media screen and (max-width: 980px) {
+
+    .mn-ab{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .ab-img {
+        margin: 0 auto;
+        width: 90%;
+        order: -1;
+    }
+
+    .ab-img img {
+        margin-bottom: 2vw;
+        width: 100%;
+    }
+
+    .main hr {
+        margin: 2vw auto;
+        width: 50%;
+    }
+
+    .ab-text {
+        order: 0;
+        width: 100%;
+    }
+
+    .ab-title {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 3vw;
+    }
+
+    .ab-dsc {
+        font-size: 3vw;
+    }
+
+    .cnt-text {
+        width: 100%;
+    }
+
+    .text-title {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    .cnt-text hr {
+        display: none;
+    }
+
+    .cnt img {
+        width: 10vw;
+    }
+
+    .cnt p {
+        font-size: 3vw;
+        margin-bottom: 2vw;
+    }
+
+    .cnt-form {
+        margin-top: 2vw;
+        width: 100%;
+    }
+
+    .cnt-form input {
+        border-radius: 0;
+        font-size: 2vw;
+        height: 5vw;
+    }
+
+    .cnt-form select {
+        font-size: 2vw;
+        height: 5vw;
+    }
+
+    .cnt-form label {
+        font-size: 2vw;
+    }
+
+    .cnt-form textarea {
+        font-size: 2vw;
+    }
+
+    .checkbox{
+        float: left;
+        width: 2vw;
+    }
+
+    .contactsMain .cb-text{
+        padding-top: 1.7vw;
+        padding-left: 1vw;
+        float: left;
+        font-size: 1.4vw;
+        font-weight: 400;
+    }
+
+}
